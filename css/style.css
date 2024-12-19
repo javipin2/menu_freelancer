@@ -324,7 +324,6 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 45px 0 75px 0;
   justify-content: center;
 }
 
@@ -341,6 +340,7 @@ a:focus {
 
 .slider_section .detail-box {
   color: black;
+  height: 50vh;
 }
 
 .slider_section .detail-box h1 {
@@ -560,6 +560,7 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  align-items: center;
 }
 
 .food_section .box .options a {
