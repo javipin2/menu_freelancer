@@ -354,7 +354,7 @@ a:focus {
     }
 
   }
-
+  
   .img-box {
     img {
       width: 100%;
@@ -362,7 +362,11 @@ a:focus {
 
   }
 
-
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 0;
+  }
+  
   .carousel-indicators {
     position: unset;
     margin: 0;
