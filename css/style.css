@@ -1986,7 +1986,7 @@ h6 {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 20px;
   padding: 0;
-  max-width: 480px;
+  max-width: 520px;
   width: 100%;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -2045,7 +2045,7 @@ h6 {
 
 .modal-concurso-header {
   background: linear-gradient(135deg, #9c000d 0%, #7a000a 100%);
-  padding: 25px 20px 20px 20px;
+  padding: 28px 25px 22px 25px;
   text-align: center;
   color: #ffffff;
   position: relative;
@@ -2066,9 +2066,9 @@ h6 {
 
 .modal-concurso-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
   animation: titlePulse 2s ease-in-out infinite;
@@ -2085,7 +2085,7 @@ h6 {
 
 .modal-concurso-subtitle {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin: 0;
   font-weight: 500;
   opacity: 0.95;
@@ -2093,14 +2093,14 @@ h6 {
 }
 
 .modal-concurso-body {
-  padding: 35px 25px 25px 25px;
+  padding: 38px 28px 28px 28px;
 }
 
 .modal-concurso-steps-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #014927;
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
   text-align: center;
   font-weight: 600;
 }
@@ -2108,14 +2108,14 @@ h6 {
 .modal-concurso-steps {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 17px;
 }
 
 .step-item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  padding: 15px;
+  gap: 16px;
+  padding: 17px;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   border-radius: 12px;
   border-left: 4px solid #014927;
@@ -2156,12 +2156,12 @@ h6 {
 
 .step-number {
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: #9c000d;
   background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2177,9 +2177,9 @@ h6 {
 }
 
 .step-content p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #333;
-  margin: 0 0 6px 0;
+  margin: 0 0 7px 0;
   line-height: 1.5;
 }
 
@@ -2233,22 +2233,22 @@ h6 {
 
 .modal-concurso-footer {
   text-align: center;
-  margin-top: 25px;
-  padding-top: 20px;
+  margin-top: 28px;
+  padding-top: 22px;
   border-top: 2px solid #e9ecef;
 }
 
 .modal-concurso-ready {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #014927;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   font-weight: 600;
 }
 
 .modal-concurso-luck {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #9c000d;
   margin: 0;
   font-weight: 700;
@@ -2257,59 +2257,186 @@ h6 {
 
 /* Responsive para el modal */
 @media (max-width: 768px) {
+  .modal-concurso {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
   .modal-concurso-content {
     max-width: 95%;
-    margin: 20px;
+    margin: 0;
+    max-height: 85vh;
+    overflow-y: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .modal-concurso-header {
-    padding: 30px 20px 25px 20px;
+    padding: 22px 18px 18px 18px;
+  }
+
+  .modal-concurso-header::after {
+    bottom: -12px;
+    border-left-width: 12px;
+    border-right-width: 12px;
+    border-top-width: 12px;
   }
 
   .modal-concurso-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-bottom: 6px;
   }
 
   .modal-concurso-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .modal-concurso-body {
-    padding: 40px 25px 30px 25px;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .modal-concurso-steps-title {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+
+  .modal-concurso-steps {
+    gap: 15px;
   }
 
   .step-item {
     padding: 15px;
-    gap: 15px;
+    gap: 14px;
   }
 
   .step-number {
-    width: 50px;
-    height: 50px;
-    font-size: 2rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.7rem;
+    border-width: 2px;
   }
 
   .step-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    line-height: 1.45;
+  }
+
+  .step-example {
+    font-size: 0.85rem !important;
+    margin-top: 5px !important;
+    padding-left: 10px;
+  }
+
+  .modal-concurso-footer {
+    margin-top: 22px;
+    padding-top: 18px;
+  }
+
+  .modal-concurso-ready {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .modal-concurso-luck {
+    font-size: 1.4rem;
+  }
+
+  .modal-concurso-close {
+    top: 10px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 480px) {
+  .modal-concurso {
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .modal-concurso-content {
+    max-width: 96%;
+    max-height: 90vh;
+    border-radius: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .modal-concurso-header {
+    padding: 20px 15px 16px 15px;
+  }
+
   .modal-concurso-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+
+  .modal-concurso-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .modal-concurso-body {
+    padding: 25px 18px 18px 18px;
   }
 
   .modal-concurso-steps-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .modal-concurso-steps {
+    gap: 12px;
   }
 
   .step-item {
-    flex-direction: column;
-    text-align: center;
+    padding: 13px;
+    gap: 12px;
+    border-radius: 10px;
   }
 
   .step-number {
-    margin: 0 auto;
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+  }
+
+  .step-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .step-example {
+    font-size: 0.8rem !important;
+    padding-left: 8px;
+  }
+
+  .instagram-link,
+  .phone-link {
+    font-size: 0.9rem;
+  }
+
+  .phone-link {
+    padding: 2px 6px;
+  }
+
+  .modal-concurso-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .modal-concurso-ready {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .modal-concurso-luck {
+    font-size: 1.3rem;
   }
 }
 
